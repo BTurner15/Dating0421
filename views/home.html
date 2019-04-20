@@ -3,19 +3,9 @@
 <!-- IT 328 Full Stack Web Development -->
 <!-- Dating 2 Assignment -->
 <!-- file: views/home.html -->
-<!-- date: April 19 2019 -->
-<html lang="en">
-<head>
-    <title>Saturday 20 April</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+<!-- date: April 20 2019 -->
+<include href="views/header.html">
 
-</head>
 <body>
 
 <nav class="navbar navbar-expand-sm  navbar-default">
@@ -57,11 +47,11 @@
             <img class="img-responsive rounded" src="images/couple.JPG" style="width:400px" alt="Happy couple" >
         </div>
     </div>
-
-    <div class="col-sm-6 text-center">
-        <button type="submit" class="btn-primary btn center rounded">Create a Profile!</button>
-    </div>
-
+    <form action="views/perinfo.html" method="post">
+        <div class="col-sm-6 text-center">
+            <button type="submit" class="btn-primary btn center rounded">Create a Profile!</button>
+        </div>
+    </form>
 </div>
 
 </body>

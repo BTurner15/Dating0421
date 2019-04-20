@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- Bruce Turner, Professor Ostrander, Spring 2019 -->
+<!-- IT 328 Full Stack Web Development -->
+<!-- Dating 2 Assignment -->
+<!-- file: views/perinfo.html -->
+<!-- date: April 20 2019 -->
+
+<include href="views/header.html">
+
+<body>
+     <h1>Personal Information</h1>
+     <form class="form-group" method="post" action="#">
+          <strong>First Name</strong><br>
+          <label class="form-control-label" >
+               <input id="fname" class="form-control" type="text" name="fname" value="Sarah">
+          </label><br>
+          <strong>Last Name</strong><br>
+          <label class="form-control-label" >
+               <input id="lname" class="form-control" type="text" name="lname" value="Smith">
+          </label><br>
+          <strong>Age</strong><br>
+          <label class="form-control-label" >
+               <input id="age" class="form-control" type="age" name="age" value="30">
+          </label><br>
+          <strong>Gender</strong><br>
+              <label><input type="radio" name="gender" value="male">Male</label>
+              <label><input type="radio" name="gender" value="female">Female</label><br>
+          <strong>Phone Number</strong><br>
+          <input id="phone" class="form-control" type="phone" name="phone" value="222-333-4444"><br>
+          <div id="btn" class="container text-md-right pb-2">
+              <button  class="btn-primary btn-sm rounded" type="submit">Next ></button>
+          </div>
+     </form>
+</body>
+</html>
