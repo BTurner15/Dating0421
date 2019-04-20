@@ -13,18 +13,17 @@ $f3 = Base::instance();
 $f3->set('DEBUG',3);
 //Define a default route
 $f3->route('GET /', function(){
-    //echo '<h1>Hola!</h1>';
-    //display a view
-    $view = new View();
+    //display landing page Template
+    $view = new Template();
     echo $view->render('views/home.html');
 
 });
 //Define an personal information route
-$f3->route('GET /per-info', function() {
+$f3->route('GET /perinfo', function() {
 
     //Display form1, which posts to order2
     $view = new Template();
-    echo $view->render('views/form1.html');
+    echo $view->render('views/perinfo.html');
 });
 //Run fat free
 $f3->run();
