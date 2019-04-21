@@ -3,7 +3,7 @@
 <!-- IT 328 Full Stack Web Development -->
 <!-- Dating 2 Assignment -->
 <!-- file: views/interests.html -->
-<!-- date: April 20 2019 -->
+<!-- date: April 21 2019 -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -25,32 +25,80 @@
 <div class="container border mt-4">
     <div class="row ml-2">
         <div class="col-sm-12">
-            <h1>Interest</h1>
+            <h1>Interests</h1>
         </div>
-    </div>
+    </div> <!-- end row_1 col_1 -->
+    <!-- row_2 will be the In-door Interests, broken down into 4 columns -->
     <form class="form-group" method="post" action="views/summary">
         <div class="row ml-2">
-            <div class="col-sm-6">
-                <strong>Email</strong><br>
-                <label class="form-control-label" >
-                    <input id="email" class="form-control" type="email" name="email" value="my_email@gmail.com">
+            <div class="col-sm-3">
+                <strong>In-door Interests</strong><br>
+                <label class="form-check-label" for="check1" >
+                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="television" checked>tv
                 </label><br>
-                <strong>State</strong><br>
-                <label class="form-control-label" >
-                    <input id="resState" class="form-control" type="text" name="resState" value="WASHINGTON">
+                <label class="form-check-label" for="check2" >
+                    <input type="checkbox" class="form-check-input" id="check2" name="option2" value="puzzels">puzzles
                 </label><br>
-                <strong>Seeking</strong><br>
-                <label><input type="radio" name="seekSex" value="male"checked>Male</label>
-                <label><input type="radio" name="seekSex" value="female">Female</label><br>
-            </div> <!-- end row#1 col one-->
-            <div class="col-sm-6">
-                <div class="container border mt-4" style="background-color:lightgrey">
-                    <strong>Biography</strong><br>
-                    <p class="bg-light"><strong>Note: </strong>All information entered is<br>protected by our <span style="color:lightskyblue">privacy policy</span>.<br>
-                        Profile information can only be<br> viewed by others with your permission.</p>
-                </div>
             </div>
-        </div> <!-- end row#1 -->
+            <div class="col-sm-3">
+                <br>
+                <label class="form-check-label" for="check3" >
+                    <input type="checkbox" class="form-check-input" id="check3" name="option3" value="movies">movies
+                </label><br>
+                <label class="form-check-label" for="check4" >
+                    <input type="checkbox" class="form-check-input" id="check4" name="option4" value="reading">reading
+                </label><br>
+            </div>
+            <div class="col-sm-3">
+                <br>
+                <label class="form-check-label" for="check5" >
+                    <input type="checkbox" class="form-check-input" id="check5" name="option5" value="cooking"checked>cooking
+                </label><br>
+                <label class="form-check-label" for="check6" >
+                    <input type="checkbox" class="form-check-input" id="check6" name="option6" value="playing cards"checked>reading
+                </label><br>
+            </div>
+            <div class="col-sm-3">
+                <br>
+                <label class="form-check-label" for="check7" >
+                    <input type="checkbox" class="form-check-input" id="check7" name="option7" value="board games">board games
+                </label><br>
+                <label class="form-check-label" for="check8" >
+                    <input type="checkbox" class="form-check-input" id="check8" name="option8" value="video games"checked>video games
+                </label><br>
+            </div>
+            <!-- now the Out-door Interests -->
+            <div class="row ml-2">
+                <div class="col-sm-3">
+                    <strong>Out-door Interests</strong><br>
+                    <label class="form-check-label" for="check9" >
+                        <input type="checkbox" class="form-check-input" id="check9" name="option9" value="hiking" checked>hiking
+                    </label><br>
+                    <label class="form-check-label" for="check10" >
+                        <input type="checkbox" class="form-check-input" id="check10" name="option10" value="walking">walking
+                    </label><br>
+                </div>
+                <div class="col-sm-3">
+                    <br>
+                    <label class="form-check-label" for="check11" >
+                        <input type="checkbox" class="form-check-input" id="check11" name="option11" value="biking">biking
+                    </label><br>
+                    <label class="form-check-label" for="check12" >
+                        <input type="checkbox" class="form-check-input" id="check12" name="option12" value="climbing"checked>climbing
+                    </label><br>
+                </div>
+                <div class="col-sm-3">
+                    <br>
+                    <label class="form-check-label" for="check13" >
+                        <input type="checkbox" class="form-check-input" id="check13" name="option13" value="swimming"checked>swimming
+                    </label><br>
+                </div>
+                <div class="col-sm-3">
+                    <br>
+                    <label class="form-check-label" for="check14" >
+                        <input type="checkbox" class="form-check-input" id="check14" name="option14" value="collecting">collecting
+                    </label><br>
+                </div>
         <form action="views/summary.html" method="post">
             <div id="btn" class="container text-md-right pb-2">
                 <button  class="btn-primary btn-sm rounded" type="submit">Next ></button>
