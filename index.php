@@ -35,5 +35,21 @@ $f3->route('GET /profile', function() {
     $view = new Template();
     echo $view->render('views/profile.html');
 });
+
+//Define a interests route
+$f3->route('GET /interests', function() {
+
+    //Display form1, which posts to profile
+    $view = new Template();
+    echo $view->render('views/interests.html');
+});
+
+//Define a summary route
+$f3->route('GET /summary', function() {
+
+    //Display form1, which posts to profile
+    $view = new Template();
+    echo $view->render('views/summary.html');
+});
 //Run fat free
 $f3->run();
