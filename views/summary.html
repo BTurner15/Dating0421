@@ -2,7 +2,7 @@
 <!-- Bruce Turner, Professor Ostrander, Spring 2019 -->
 <!-- IT 328 Full Stack Web Development -->
 <!-- Dating 2 Assignment -->
-<!-- file: views/profile.html -->
+<!-- file: views/contact.html -->
 <!-- date: April 20 2019 -->
 <html lang="en">
 <head>
@@ -25,35 +25,44 @@
 <div class="container border mt-4">
     <div class="row ml-2">
         <div class="col-sm-12">
-            <h1>Profile</h1>
+            <h1>Contact Me!</h1>
         </div>
     </div>
-    <form class="form-group" method="post" action="views/interests">
+    <form class="form-group" method="post" action="#">
         <div class="row ml-2">
-            <div class="col-sm-6">
-                <strong>Email</strong><br>
+            <div class="col-sm-8">
+                <strong>First Name</strong><br>
                 <label class="form-control-label" >
-                    <input id="email" class="form-control" type="email" name="email" value="my_email@gmail.com">
+                    <input id="fname" class="form-control" type="text" name="fname" value="Sarah">
                 </label><br>
-                <strong>State</strong><br>
+                <strong>Last Name</strong><br>
                 <label class="form-control-label" >
-                    <input id="resState" class="form-control" type="text" name="resState" value="WASHINGTON">
+                    <input id="lname" class="form-control" type="text" name="lname" value="Smith">
                 </label><br>
-                <strong>Seeking</strong><br>
-                <label><input type="radio" name="seekSex" value="male"checked>Male</label>
-                <label><input type="radio" name="seekSex" value="female">Female</label><br>
+                <strong>Age</strong><br>
+                <label class="form-control-label" >
+                    <input id="age" class="form-control" type="number" name="age" value="30">
+                </label><br>
+                <strong>Gender</strong><br>
+                <label><input type="radio" name="gender" value="male">Male</label>
+                <label><input type="radio" name="gender" value="female"checked>Female</label><br>
+                <strong>Phone Number</strong><br>
+                <label>
+                    <input id="phone" class="form-control" type="tel" name="phone" value="222-333-4444"><br>
+                </label>
             </div> <!-- end row#1 col one-->
-            <div class="col-sm-6">
+            <div class="col-sm-4">
                 <div class="container border mt-4" style="background-color:lightgrey">
-                    <strong>Biography</strong><br>
                     <p class="bg-light"><strong>Note: </strong>All information entered is<br>protected by our <span style="color:lightskyblue">privacy policy</span>.<br>
                         Profile information can only be<br> viewed by others with your permission.</p>
                 </div>
             </div>
         </div> <!-- end row#1 -->
-        <form action="views/interests.html" method="post">
+        <form action="views/contact.html" method="post">
             <div id="btn" class="container text-md-right pb-2">
-               <button  class="btn-primary btn-sm rounded" type="submit">Next ></button>
+                <form action="views/contact.html" method="post">
+                    <button  class="btn-primary btn-sm rounded" type="submit">Contact Me!</button>
+                </form>
             </div>
         </form>
     </form>
