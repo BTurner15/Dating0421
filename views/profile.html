@@ -28,26 +28,29 @@
             <h1>Profile</h1>
         </div>
     </div>
-    <form class="form-group" method="post" action="views/interests">
+    <form class="form-group" method="post" action="interests">
         <div class="row ml-2">
             <div class="col-sm-6">
                 <strong>Email</strong><br>
                 <label class="form-control-label" >
                     <input id="email" class="form-control" type="email" name="email" value="my_email@gmail.com">
+                    <?php $_SESSION['email'] = $_POST['email']; ?>
                 </label><br>
                 <strong>State</strong><br>
                 <label class="form-control-label" >
                     <input id="resState" class="form-control" type="text" name="resState" value="WASHINGTON">
                 </label><br>
+                <?php $_SESSION['resState'] = $_POST['resState']; ?>
                 <strong>Seeking</strong><br>
                 <label><input type="radio" name="seekSex" value="male"checked>Male</label>
                 <label><input type="radio" name="seekSex" value="female">Female</label><br>
+
             </div> <!-- end row#1 col one-->
             <div class="col-sm-6">
-                <div class="container border mt-4" style="background-color:lightgrey">
+                <div class="container">
                     <strong>Biography</strong><br>
-                    <p class="bg-light"><strong>Note: </strong>All information entered is<br>protected by our <span style="color:lightskyblue">privacy policy</span>.<br>
-                        Profile information can only be<br> viewed by others with your permission.</p>
+                    <textarea name="bio" id="bio" cols="40" rows="10">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec blandit lorem. Aenean sed lectus et lectus feugiat condimentum. Praesent in vulputate neque, in pharetra sem. Praesent sit amet ex convallis, egestas ex et, tristique mi. Donec orci magna, semper sit amet nunc a, auctor tempus lorem. Vestibulum quis magna nec elit aliquet laoreet. Aenean et commodo felis. In non elit viverra, tempor nulla in, rhoncus ligula. Duis ut purus et tortor auctor consequat. Cras nec turpis elementum tortor feugiat tincidunt et non ex. </textarea>
                 </div>
             </div>
         </div> <!-- end row#1 -->

@@ -28,33 +28,38 @@
                <h1>Personal Information</h1>
           </div>
      </div>
-     <form class="form-group" method="post" action="#">
+     <form class="form-group" method="post" action="profile">
           <div class="row ml-2">
                <div class="col-sm-8">
                     <strong>First Name</strong><br>
                     <label class="form-control-label" >
                          <input id="fname" class="form-control" type="text" name="fname" value="Sarah">
+
                     </label><br>
                     <strong>Last Name</strong><br>
                     <label class="form-control-label" >
                          <input id="lname" class="form-control" type="text" name="lname" value="Smith">
+                         <?php $_SESSION['lname'] = $_POST['lname']; ?>
                     </label><br>
                     <strong>Age</strong><br>
                     <label class="form-control-label" >
                          <input id="age" class="form-control" type="number" name="age" value="30">
+                         <?php $_SESSION['age'] = $_POST['age']; ?>
                     </label><br>
                     <strong>Gender</strong><br>
                     <label><input type="radio" name="gender" value="male">Male</label>
                     <label><input type="radio" name="gender" value="female"checked>Female</label><br>
+                         <?php $_SESSION['gender'] = $_POST['gender']; ?>
                     <strong>Phone Number</strong><br>
                     <label>
                          <input id="phone" class="form-control" type="tel" name="phone" value="222-333-4444"><br>
+                         <?php <$_SESSION['phone'] = $_POST['phone']; ?>
                     </label>
                </div> <!-- end row#1 col one-->
                <div class="col-sm-4">
-                    <div class="container border mt-4" style="background-color:lightgrey">
-                    <p class="bg-light"><strong>Note: </strong>All information entered is<br>protected by our <span style="color:lightskyblue">privacy policy</span>.<br>
-                         Profile information can only be<br> viewed by others with your permission.</p>
+                    <div class="container text-center" style="">
+                    <p class="bg-light border"><strong>Note: </strong>All information entered is protected by our <span style="color:lightskyblue">privacy policy</span>.
+                         Profile information can only be viewed by others with your permission.</p>
                     </div>
                </div>
           </div> <!-- end row#1 -->

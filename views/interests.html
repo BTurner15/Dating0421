@@ -29,45 +29,46 @@
         </div>
     </div> <!-- end row_1 col_1 -->
     <!-- row_2 will be the In-door Interests, broken down into 4 columns -->
-    <form class="form-group" method="post" action="views/summary">
+    <form class="form-group" method="post" action="summary">
         <div class="row ml-2">
             <div class="col-sm-3">
                 <strong>In-door Interests</strong><br>
                 <label class="form-check-label" for="check1" >
-                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="television" checked>tv
+                    <input type="checkbox" class="form-check-input" id="check1" name="indoor[]" value="television" checked>tv
                 </label><br>
                 <label class="form-check-label" for="check2" >
-                    <input type="checkbox" class="form-check-input" id="check2" name="option2" value="puzzels">puzzles
+                    <input type="checkbox" class="form-check-input" id="check2" name="indoor[]" value="puzzles">puzzles
                 </label><br>
             </div>
             <div class="col-sm-3">
                 <br>
                 <label class="form-check-label" for="check3" >
-                    <input type="checkbox" class="form-check-input" id="check3" name="option3" value="movies">movies
+                    <input type="checkbox" class="form-check-input" id="check3" name="indoor[]" value="movies">movies
                 </label><br>
                 <label class="form-check-label" for="check4" >
-                    <input type="checkbox" class="form-check-input" id="check4" name="option4" value="reading">reading
+                    <input type="checkbox" class="form-check-input" id="check4" name="indoor[]" value="reading">reading
                 </label><br>
             </div>
             <div class="col-sm-3">
                 <br>
                 <label class="form-check-label" for="check5" >
-                    <input type="checkbox" class="form-check-input" id="check5" name="option5" value="cooking"checked>cooking
+                    <input type="checkbox" class="form-check-input" id="check5" name="indoor[]" value="cooking"checked>cooking
                 </label><br>
                 <label class="form-check-label" for="check6" >
-                    <input type="checkbox" class="form-check-input" id="check6" name="option6" value="playing cards"checked>reading
+                    <input type="checkbox" class="form-check-input" id="check6" name="indoor[]" value="playing cards"checked>playing cards
                 </label><br>
             </div>
             <div class="col-sm-3">
                 <br>
                 <label class="form-check-label" for="check7" >
-                    <input type="checkbox" class="form-check-input" id="check7" name="option7" value="board games">board games
+                    <input type="checkbox" class="form-check-input" id="check7" name="indoor[]" value="board games">board games
                 </label><br>
                 <label class="form-check-label" for="check8" >
-                    <input type="checkbox" class="form-check-input" id="check8" name="option8" value="video games"checked>video games
+                    <input type="checkbox" class="form-check-input" id="check8" name="indoor[]" value="video games"checked>video games
                 </label><br>
             </div>
             <!-- now the Out-door Interests -->
+        </div>
             <div class="row ml-2">
                 <div class="col-sm-3">
                     <strong>Out-door Interests</strong><br>
@@ -99,11 +100,13 @@
                         <input type="checkbox" class="form-check-input" id="check14" name="option14" value="collecting">collecting
                     </label><br>
                 </div>
+            </div>
         <form action="views/summary.html" method="post">
             <div id="btn" class="container text-md-right pb-2">
                 <button  class="btn-primary btn-sm rounded" type="submit">Next ></button>
             </div>
         </form>
+
     </form>
 </div> <!-- close main container -->
 </body>
