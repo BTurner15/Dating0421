@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- Bruce Turner, Professor Ostrander, Spring 2019 -->
+<!-- IT 328 Full Stack Web Development -->
+<!-- Dating 2 Assignment -->
+<!-- file: views/profile.html -->
+<!-- date: April 20 2019 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Dating II Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+
+</head>
+<body>
+<nav class="navbar navbar-expand-sm  navbar-default">
+    <a class="navbar-brand" href="#">My Dating Website</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"><span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+<div class="container border mt-4">
+    <div class="row ml-2">
+        <div class="col-sm-12">
+            <h1>Profile</h1>
+        </div>
+    </div>
+    <form class="form-group" method="post" action="views/profile">
+        <div class="row ml-2">
+            <div class="col-sm-6">
+                <strong>Email</strong><br>
+                <label class="form-control-label" >
+                    <input id="email" class="form-control" type="email" name="email" value="my_email@gmail.com">
+                </label><br>
+                <strong>State</strong><br>
+                <label class="form-control-label" >
+                    <input id="resState" class="form-control" type="text" name="resState" value="WASHINGTON">
+                </label><br>
+                <strong>Seeking</strong><br>
+                <label><input type="radio" name="seekSex" value="male"checked>Male</label>
+                <label><input type="radio" name="seekSex" value="female">Female</label><br>
+            </div> <!-- end row#1 col one-->
+            <div class="col-sm-6">
+                <div class="container border mt-4" style="background-color:lightgrey">
+                    <strong>Biography</strong><br>
+                    <p class="bg-light"><strong>Note: </strong>All information entered is<br>protected by our <span style="color:lightskyblue">privacy policy</span>.<br>
+                        Profile information can only be<br> viewed by others with your permission.</p>
+                </div>
+            </div>
+        </div> <!-- end row#1 -->
+        <div id="btn" class="container text-md-right pb-2">
+            <button  class="btn-primary btn-sm rounded" type="submit">Next ></button>
+        </div>
+    </form>
+</div> <!-- close main container -->
+</body>
+</html>
