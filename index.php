@@ -59,7 +59,7 @@ $f3->route('GET|POST /interests', function() {
     //save the data gathered in profile
     $_SESSION['email'] = $_POST['email'];
     $_SESSION['resState'] = $_POST['resState'];
-    $_SESSION['bibliography'] = $_POST['bio'];
+    $_SESSION['biography'] = $_POST['bio'];
     $_SESSION['seekSex'] = $_POST['seekSex'];
     //print_r($_SESSION);
 
@@ -77,7 +77,7 @@ $f3->route('GET|POST /summary', function() {
 
     $outdoor = $_POST['outdoor'];
     $_SESSION['outdoor_interests'] = implode(", ", $outdoor);
-    print_r($_SESSION);
+    //print_r($_SESSION);
 
     //Display summary, which concludes Dating II
     $view = new Template();
