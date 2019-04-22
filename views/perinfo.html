@@ -3,7 +3,7 @@
 <!-- IT 328 Full Stack Web Development -->
 <!-- Dating 2 Assignment -->
 <!-- file: views/perinfo.html -->
-<!-- date: April 20 2019 -->
+<!-- date: Sunday April 21 2019 -->
 <html lang="en">
 <head>
      <meta charset="UTF-8">
@@ -39,21 +39,17 @@
                     <strong>Last Name</strong><br>
                     <label class="form-control-label" >
                          <input id="lname" class="form-control" type="text" name="lname" value="Smith">
-                         <?php $_SESSION['lname'] = $_POST['lname']; ?>
                     </label><br>
                     <strong>Age</strong><br>
                     <label class="form-control-label" >
                          <input id="age" class="form-control" type="number" name="age" value="30">
-                         <?php $_SESSION['age'] = $_POST['age']; ?>
                     </label><br>
                     <strong>Gender</strong><br>
                     <label><input type="radio" name="gender" value="male">Male</label>
                     <label><input type="radio" name="gender" value="female"checked>Female</label><br>
-                         <?php $_SESSION['gender'] = $_POST['gender']; ?>
                     <strong>Phone Number</strong><br>
                     <label>
                          <input id="phone" class="form-control" type="tel" name="phone" value="222-333-4444"><br>
-                         <?php <$_SESSION['phone'] = $_POST['phone']; ?>
                     </label>
                </div> <!-- end row#1 col one-->
                <div class="col-sm-4">
@@ -63,9 +59,9 @@
                     </div>
                </div>
           </div> <!-- end row#1 -->
-          <form action="views/profile.html" method="post">
+          <form action="views/profile" method="post">
              <div id="btn" class="container text-md-right pb-2">
-               <form action="views/profile.html" method="post">
+               <form action="views/profile" method="post">
                     <button  class="btn-primary btn-sm rounded" type="submit">Next ></button>
                </form>
              </div>
